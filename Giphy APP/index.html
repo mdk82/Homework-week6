@@ -2,18 +2,39 @@
 <html>
 <head>
 	<title> Giphy App</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="javascript/app.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	
 </head>
 <body>
 
-	<div id="main">
-		<button id="button"></button>
-		<div id="giphy">
-			
+	<div id="giphyinput"><p>Giphy Generator!</p>
+		<form id="sumbmitform">
+			<label for="forminput">Add a Word</label>
+			<input type="text" id="forminput"><br>
+			<button type="submit" id="submit-word"> Submit </button>
+		</form>
+	</div>
+	<div id="giphywords">
+		
+	</div>
+
+	<div>
+		<div id="giphydisplay">
+			<p>Giphy's will display here</p>
 		</div>
 	</div>
+
+	<!-- JavaScript -->
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 </html>
